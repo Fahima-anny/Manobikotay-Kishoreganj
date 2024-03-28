@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdul Kadir (UYDO) </title>
-  <link rel="shortcut icon" href="https://i.ibb.co/Jkzttf2/31563333199.png" type="image/x-icon">
+  <title>Humaniity in Kishoreganj</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" type="image/x-icon">
   <link href="./output.css" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -35,7 +35,105 @@ transition: 0.7s;
 
 
 
+ /* 7 */
+ .btn-7 {
+      background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(18, 18, 18) 100%);
+      line-height: 30px;
+      padding: 0;
+      border: none;
+    }
 
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: #f603ad;
+      box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-7:before {
+      height: 0%;
+      width: 2px;
+    }
+
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+
+    .btn-7:hover {
+      color: #f603ad;
+      background: transparent;
+    }
+
+    .btn-7:hover:before {
+      height: 100%;
+    }
+
+    .btn-7:hover:after {
+      width: 100%;
+    }
+
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #f603ad;
+      box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+
+
+    .custom-btn {
+      font-family: 'Lato', sans-serif;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      box-shadow: inset 2px 2px 2px 0px rgba(177, 177, 177, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+      outline: none;
+    }
 
 
 
@@ -56,190 +154,1399 @@ transition: 0.7s;
 
 
 </head>
-<body class="relative ">
+<body class="relative">
 
 
   <!-- nav section start  -->
-  <section class="bg-[#70bffb] fixed w-full z-50 navSection">
-    <div class="navbar px-0 md:px-20 justify-between " >
-      <div class="navbar-start w-96 ">
+  <section class="bg-black border-b-4 border-b-[#f603ad] fixed w-full z-50 navSection px-0 md:px-28">
+    <div class="navbar">
+      <div class="navbar-start ">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52  text-lg font-bold bg-blue-300 ">
-            <li><a href="#footerSection">Contacts</a></li>
-            <li><a href="./index.html">Exit</a></li>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-52">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./index.html">Focus</a></li>
+            <li><a href="./index.html">Campaigns</a></li>
+            <li><a href="./index.html">Recents</a></li>
+            <li><a href="./index.html">Expenditure</a></li>
+            <li><a href="./index.html">Committee</a></li>
+            <li><a href="./index.html">Contact</a></li>
           </ul>
         </div>
-       <div class="flex flex-col text-center mx-auto md:mx-0"> 
-        <a class="font-extrabold text-3xl font-serif">ABDUL KADIR</a>
-        <a class="font-bold text-md text-slate-600 ">Upazilla Youth Development Officer</a>
+        <!-- <a class=" text-xl text-black font-bold">MANOBIKOTAY KISHOREGANJ</a> -->
+        <div class=" pl-[20vw] md:pl-0 text-xl text-black font-bold flex gap-2 justify-center items-center">
+          <img class="h-[70px] w-[70px] rounded-full"
+            src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" alt="">
+          <a class=" text-sm text-white font-bold">KISHOREGANJ <br> in HUMANITY</a>
+        </div>
       </div>
-      </div>
-      <div class="navbar-end hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-slate-600 text-lg font-bold">
-          <li class="hover:text-white hover:bg-[#70bffb] hover:duration-700 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500"><a href="#footerSection">Contacts</a></li>
-          <li class="hover:text-white hover:bg-[#70bffb] hover:duration-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500"><a href="./index.html">Exit</a></li>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal pe-10 text-slate-200 font-[500] text-md">
+          <li class="hover:underline"><a href="#bannerSection">Home</a></li>
+          <!-- <li>
+          <details>
+            <summary>Menu</summary>
+            <ul class="px-4"> -->
+          <li class="hover:underline"><a href="./index.html">About</a></li>
+          <li class="hover:underline"><a href="./index.html">Focus</a></li>
+          <li class="hover:underline"><a href="./index.html">Projects</a></li>
+          <li class="hover:underline"><a href="./index.html">Recents</a></li>
+          <li class="hover:underline"><a href="./index.html">Expenditure</a></li>
+          <li class="hover:underline"><a href="./index.html">Committee</a></li>
+          <li class="hover:underline"><a href="./index.html">Contact</a></li>
+          <!-- </ul>
+          </details>
+        </li> -->
         </ul>
+      </div>
+      <div class="navbar-end">
+        <button
+        class="hidden md:flex justify-center items-center btn bg-[#f975d1] text-black text-xl font-semibold border-0 hover:bg-[#fc99df] hover:ring-2 hover:ring-white ease-in-out delay-150 duration-500" onclick="donate_modal_5.showModal()">Donate Now</button>
       </div>
     </div>
   </section>
-   <!-- nav section end  -->
-  
-  
-  
-  
+  <!-- nav section end -->
 
   
+
+
+
   
-  <!-- about me section start  -->
-  <section class="py-10 md:py-20   px-5 md:px-20 relative" id="aboutSection">
+  <!-- campaign card section start  -->
+<section class="pt-40 pb-20 px-3 md:px-20 xl:px-40">
+  <h1 class="pb-16 font-extrabold text-4xl font-serif text-center text-[#272002]">OUR CAMPAIGNS </h1>
 
-    <h1 class="pb-10 font-extrabold text-4xl font-serif text-center mt-20 mb-8">CAMPAIGNS   </h1>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 pb-16">
+        <!-- card 1 start  -->
+        <div class="col">
+       <div
+        class="card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+        <figure>
+          <div class="">
+
+            <div class="carousel w-full">
+              <!-- Slide 1 -->
+              <div id="card1S1" class="carousel-item relative w-full">
+                <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S3')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S2')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            
+              <!-- Slide 2 -->
+              <div id="card1S2" class="carousel-item relative w-full hidden"> <!-- Initially hidden -->
+                <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S1')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S3')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            
+              <!-- Slide 3 -->
+              <div id="card1S3" class="carousel-item relative w-full hidden"> <!-- Initially hidden -->
+                <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S2')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S1')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            </div>
+            
+          
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold text-center mx-auto">Eid Donation</h2>
+<p class=""></p>
+          <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_1.showModal()">Details</button>
+<dialog id="my_modal_1" class="modal">
+<div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
   <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
- <h1 class="font-bold text-2xl mb-5">Youth Development Campaign -Certificate Giving</h1>
-    <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para"> I am 
-      Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. Through education and mentorship, we inspire resilience and skill development. Committed to shaping the future, I advocate for a holistic approach to youth empowerment, fostering growth and readiness for success in a dynamic world.
+ <h1 class="font-bold text-2xl mb-5">Eid Donation</h1>
+    <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+      Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
  </p>
-    <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
+    <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
      
-      <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
+      <button
+      class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now </button>
+
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button
+        class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+      </form>
+
     </div>
   
   </DIV>
   
   <DIV class="col order-1 lg:order-2 flex justify-center items-center">
-  <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+  <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
   </DIV>
     
   </div>
+  
+<!-- <div class="modal-action">
 
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 py-16"> 
-    <DIV class="col  flex justify-center items-center">
-    <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/G9nvQF0/45043894544.png" alt=""></div>
-    </DIV>
-      
-    <DIV class="col  flex items-center lg:items-start justify-center flex-col">
-      <h1 class="font-bold text-2xl mb-5">Poverty Emancipation Campaign</h1>
-         <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para">
-          I am resolute in my mission to inspire, guide, and propel the youth toward meaningful success. This journey is a testament to my unwavering dedication to fostering positive change and creating lasting impact in the lives of those I serve.As a devoted Youth Development Officer, I spearhead initiatives aimed at fostering the holistic growth of young individuals. With an unwavering commitment to nurturing potential, my team and I have successfully executed a spectrum of projects designed to empower and uplift the youth. These ongoing endeavors encapsulate diverse facets of personal and professional development, ranging from skill enhancement programs to community engagement initiatives.
-      </p>
-         <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
-          
-           <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
-         </div>
-       
-       </DIV>
-    </div>
+</div> -->
+</div>
+</dialog>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 pt-16 pb-5">
-      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
-     <h1 class="font-bold text-2xl mb-5">Her Power Project - Women Empowerment</h1>
-        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para">
-          It was a short journey with these young girls. They have started from zero. But now, how great designs they are doing today! Some of them even do client work who came to my classes only two months ago. I am talking about the students of my graphic design batch under the Her Power project.
-
-          A trainer named Md. Mahmud Hasan, Graphics Designer of Riseup Labs’ shared his excitement about his students who are learning Graphic Design under the Her Power project. He also said, as a mentor my target is, that each student will earn from the marketplace, supporting themselves and their families after the next 6 months.
-     </p>
-        <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
-         
-          <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
         </div>
-      
+      </div>
+        </div>
+        <!-- card 2 start  -->
+        <div class="col ">
+      <div
+        class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+        <figure>
+          <div class="">
+           
+            <div class="carousel w-full">
+              <!-- Slide 1 -->
+              <div id="card2S1" class="carousel-item2 relative w-full">
+                <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S3')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S2')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            
+              <!-- Slide 2 -->
+              <div id="card2S2" class="carousel-item2 relative w-full hidden"> <!-- Initially hidden -->
+                <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S1')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S3')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            
+              <!-- Slide 3 -->
+              <div id="card2S3" class="carousel-item2 relative w-full hidden"> <!-- Initially hidden -->
+                <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S2')">❮</a> <!-- Navigation to previous slide -->
+                  <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S1')">❯</a> <!-- Navigation to next slide -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold mx-auto text-center">Providing Meal for Poor People</h2>
+<p class=""></p>
+          <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+<div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+  <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+ <h1 class="font-bold text-2xl mb-5">Providing Meal for Poor People</h1>
+    <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+      Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+ </p>
+    <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+     
+      <button
+      class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button
+        class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+      </form>
+    </div>
+  </DIV>
+  <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+  <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+  </DIV>
+    
+  </div>
+  
+<!-- <div class="modal-action">
+
+</div> -->
+</div>
+</dialog>
+
+
+        </div>
+      </div>
+        </div>
+        <!-- card 3 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card3S1" class="carousel-item3 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card3S2" class="carousel-item3 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card3S3" class="carousel-item3 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Independent Project </h2>
+    <p class=""></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_3.showModal()">Details</button>
+    <dialog id="my_modal_3" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Independent Project</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
       </DIV>
-      
       <DIV class="col order-1 lg:order-2 flex justify-center items-center">
-      <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/mNWYB1g/img.jpg" alt=""></div>
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
       </DIV>
         
       </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 py-16"> 
-        <DIV class="col  flex justify-center items-center">
-        <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/fGcXQHK/17948331903.png" alt=""></div>
-        </DIV>
-          
-        <DIV class="col  flex items-center lg:items-start justify-center flex-col">
-          <h1 class="font-bold text-2xl mb-5">Agricultural Training Campaign</h1>
-             <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para">
-             
-Embark on an agricultural odyssey with our groundbreaking campaign, cultivating a harmonious blend of sustainability and growth. This initiative is a testament to our commitment to nurturing the roots of agriculture, fostering innovation, and sowing the seeds of a prosperous future. Join us in tilling the soil of change, reaping the bounties of a sustainable tomorrow for our farmers and the agricultural landscape at large.
-Witness the metamorphosis of agriculture through our campaign, intertwining tradition with innovation, and fostering a greener, more resilient future for generations to come.
-          </p>
-             <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
-              
-               <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
-             </div>
-           
-           </DIV>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 pt-16 pb-10">
-          <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
-         <h1 class="font-bold text-2xl mb-5">Self-Employment Campaign</h1>
-            <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para">
-              Empowering youth through self-employment initiatives, our project is a beacon of hope. Fostering skills, instilling entrepreneurship, and cultivating self-reliance, it's a transformative journey towards a brighter, more sustainable future. Join us in sculpting success stories, one empowered youth at a time.As we pave the way for economic independence, we envision a community flourishing with self-driven individuals, contributing to a thriving society. Join our transformative journey!
-         </p>
-            <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
-             
-              <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
-            </div>
-          
-          </DIV>
-          
-          <DIV class="col order-1 lg:order-2 flex justify-center items-center">
-          <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/H41sVdq/40205746-114916209458614-4372405483332435968-n.png" alt=""></div>
-          </DIV>
-            
-          </div>
+      
+    <!-- <div class="modal-action">
     
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-16 py-16"> 
-            <DIV class="col  flex justify-center items-center">
-            <div class="hover:border-white border-slate-300 border-4 hover:ring-blue-300 hover:ring-4  ease-in-out delay-150 hover:-translate-y-2 hover:scale-110 duration-300"><img src="https://i.ibb.co/VQGJFFs/etets.png" alt=""></div>
-            </DIV>
-              
-            <DIV class="col  flex items-center lg:items-start justify-center flex-col">
-              <h1 class="font-bold text-2xl mb-5">Donation of winter clothes</h1>
-                 <p class="text-md font-semibold text-amber-900 bannerIntro leading-7" id="para">
-                 
-                  In our initiative to embrace compassion, we extend warmth to those in need through the donation of winter clothes. As winter chills set in, our project aims to provide comfort and protection, ensuring that vulnerable individuals face the season with dignity. Your support can make a significant impact in fostering a sense of community and solidarity during the colder months. Join us in spreading the gift of warmth.Together, let's make winter a season of shared warmth and kindness.
-              </p>
-                 <div class="flex flex-col  justify-center lg:justify-start items-center gap-5 mt-5">
-                  
-                   <button class="bg-[#6bbcfa] hover:bg-[#45abf9] text-lg font-bold btn border-0 px-10 hover:ring hover:ring-gray-300 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 btnDesign"><a href="#footerSection">Contact </a></button>
-                 </div>
-               
-               </DIV>
+    </div> -->
+    </div>
+    </dialog>
+    
+    
             </div>
+          </div>
+        </div>
+        <!-- card 4 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card4S1" class="carousel-item4 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card4S2" class="carousel-item4 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card4S3" class="carousel-item4 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide4('#card4S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Helping Paralyzed People </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_4.showModal()">Details</button>
+    <dialog id="my_modal_4" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Helping Paralyzed People</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2 ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 5 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card5S1" class="carousel-item5 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card5S2" class="carousel-item5 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card5S3" class="carousel-item5 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide5('#card5S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Winter Donation </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_5.showModal()">Details</button>
+    <dialog id="my_modal_5" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Winter Donation</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 6 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card6S1" class="carousel-item6 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card6S2" class="carousel-item6 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card6S3" class="carousel-item6 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide6('#card6S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto"> 50th Independent Day Celebration </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_6.showModal()">Details</button>
+    <dialog id="my_modal_6" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5"> 50th Independent Day Celebration </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 7 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card7S1" class="carousel-item7 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card7S2" class="carousel-item7 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card7S3" class="carousel-item7 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide7('#card7S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Celebrating Environment Day </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_7.showModal()">Details</button>
+    <dialog id="my_modal_7" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Celebrating Environment Day</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 8 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card8S1" class="carousel-item8 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8('#card8S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8 ('#card8S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card8S2" class="carousel-item8 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8('#card8S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8 ('#card8S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card8S3" class="carousel-item8 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8('#card8S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide8('#card8S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Helping 3rd Gender People</h2>
+    <p></p>
 
-  </section>
-  <!-- about me section end -->
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_8.showModal()">Details</button>
+    <dialog id="my_modal_8" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Helping 3rd Gender People</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 9 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card9S1" class="carousel-item9 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9('#card9S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9('#card9S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card9S2" class="carousel-item9 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9 ('#card9S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9 ('#card9S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card9S3" class="carousel-item9 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9('#card9S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide9('#card9S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Celebrating 21st February </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_9.showModal()">Details</button>
+    <dialog id="my_modal_9" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Celebrating 21st February</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150   duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150   duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 10 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card10S1" class="carousel-item10 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card10S2" class="carousel-item10 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card10S3" class="carousel-item10 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide10('#card10S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Donating Oxygen For Corona</h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_10.showModal()">Details</button>
+    <dialog id="my_modal_10" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Donating Oxygen For Corona</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 11 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card11S1" class="carousel-item11 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card11S2" class="carousel-item11 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card11S3" class="carousel-item11 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide11('#card11S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">House Repair of Poor People </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_11.showModal()">Details</button>
+    <dialog id="my_modal_11" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">House Repair of Poor People </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150   duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2  hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 12 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card12S1" class="carousel-item12 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card12S2" class="carousel-item12 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card12S3" class="carousel-item12 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide12('#card12S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Helping Meritorious Students</h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_12.showModal()">Details</button>
+    <dialog id="my_modal_12" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Helping Meritorious Students</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150   duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 13 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card13S1" class="carousel-item13 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card13S2" class="carousel-item13 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card13S3" class="carousel-item13 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide13('#card13S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Health Care Campaign </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_13.showModal()">Details</button>
+    <dialog id="my_modal_13" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Health Care Campaign </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2  hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 14 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card14S1" class="carousel-item14 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card14S2" class="carousel-item14 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card14S3" class="carousel-item14 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide14('#card14S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Free Blood Test </h2>
+    <p>
+
+    </p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_14.showModal()">Details</button>
+    <dialog id="my_modal_14" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Free Blood Test </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150   duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150   duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 15 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card15S1" class="carousel-item15 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card15S2" class="carousel-item15 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card15S3" class="carousel-item15 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide15('#card15S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Distributing Iftaree On Ramadan </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_15.showModal()">Details</button>
+    <dialog id="my_modal_15" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Distributing Iftaree On Ramadan </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+        <!-- card 16 start  -->
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card16S1" class="carousel-item16 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card16S2" class="carousel-item16 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card16S3" class="carousel-item16 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide16('#card16S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Aid In Natural Disastar </h2>
+    <p></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_16.showModal()">Details</button>
+    <dialog id="my_modal_16" class="modal">
+    <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Aid In Natural Disastar </h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> I am 
+          Devoted to empowering youth, I lead transformative projects as a Youth Development Officer. With a passionate team, we implement diverse initiatives, from skill-building to community engagement. My commitment to nurturing young potential drives me to create impactful programs. 
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
+      </div>
+      
+    <!-- <div class="modal-action">
+    
+    </div> -->
+    </div>
+    </dialog>
+    
+    
+            </div>
+          </div>
+        </div>
+   
+</div>
+
+
+
+<!-- btns  -->
+  <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-20">
+    <button class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-20 ease-in-out delay-150 duration-300 "><a
+        href="./index.html" target="_blank">Exit</a></button>
+    <button class="custom-btn btn-7 text-2xl font-bold btn border-0 px-10  ease-in-out delay-150 duration-300 "  onclick="donate_modal_5.showModal()">Donate Now </button>
+  </div>
+<!-- btns  -->
+
+
+</section>
+  <!--campaign card section end -->
+
+
+
   
+<!-- donate now Modal start  -->
+<div>
+  <!-- Open the modal using ID.showModal() method -->
+<dialog id="donate_modal_5" class="modal">
+
+  <div
+  class="modal-box bg-white text-center px-3 md:px-8 py-10  shadow-black shadow-md rounded-lg">
+  <h1 class="text-black text-4xl font-semibold">Thank You</h1>
+
+  <h1 class="font-bold text-yellow-950 text-xl mt-9"><a href=""> Bkash/Nagad/Rocket : <br class="md:hidden"> <span
+        class="text-black"> +8801716 958239</span></a></h1>
+        <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account :<span
+          class="font-bold text-black"> Manobikotay Kishoreganj</span></a></h1>
+  
+    <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account No. :<span
+          class="font-bold text-black"> 0100247849593</span></a></h1>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="justify-center items-center btn bg-black text-[#f975d1] text-xl font-semibold border-0 hover:bg-black hover:ring-2 hover:ring-white ease-in-out delay-150 duration-500">Close</button>
+          </form>
+
+</div>
+
+  <div class="">
+  
+ 
+    </div>
+  </div>
+</dialog>
+</div>
+<!-- donate now Modal end -->
   
 
 
 
-
-  
-
-  
-  
-  
   <!-- footer section start  -->
-  <footer class="py-12 bg-[#70bffb] mt-10 text-center navSection" id="footerSection">
-
-<h1 class="pb-10 font-extrabold text-4xl font-serif">CONTACT :</h1>
-
-    <p class=" font-serif texl-[8px] font-semibold "><span class="font-bold ">WHATSAPP : </span> <span class="font-sans font-medium text-md text-slate-700"> +880 1881-347022 </span> </p>
-   <p class=" font-serif texl-[8px] font-semibold "><span class="font-bold ">MAIL ADDRESS : </span> <span class="font-medium text-md font-sans text-slate-700"> dheeman1974@gmail.com</span> </p>
-   <p class=" font-serif texl-[8px] font-medium "><span class="font-bold ">ADDRESS : </span> <span class="font-medium text-md text-slate-700 font-sans"> Kishoreganj sadar , Kishoreganj , <br> <span class="pl-20">Dhaka , Bangladesh</span> </span> </p>
-  
-  </footer>
+  <section class="bg-black py-14 border-t-4 border-t-[#f603ad] px-3 md:px-20 xl:px-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center md:justify-between items-center gap-10">
+      <div class="flex flex-col justify-start items-center md:items-start mx-auto md:mx-0">
+        <img src="https://i.ibb.co/m8qMS26/manobikotay-kg.jpg" class="h-[200px]" alt="">
+        <h1 class=" text-white font-bold text-xl">Manobikotay Kishoreganj</h1>
+        <h1 class=" text-[#f603ad] font-bold text-lg"> Kishoreganj in Humanity</h1>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-normal text-white md:text-[#f603ad] text-lg justi">"Manobikotay Kishoreganj" is a non-profit
+          organization that empowers underprivileged individuals and communities in Bangladesh through education, youth
+          development, women’s empowerment, climate change, governance , poverty alleviation etc.</p>
+        <p class="font-normal text-slate-400 text-md mt-2">Developed by - <span class="font-bold text-lg text-white "><a
+              href="https://fahima-akter-portfolio.netlify.app/"
+              class="hover:text-[#f603ad] ease-in-out delay-150 duration-300" target="_blank">FAHIMA AKTER</a></span>
+        </p>
+        <p class="mt-3 font-medium text-slate-400 text-center md:text-start pt-10 md:pt-0">© 2024 - <span
+            class="text-white text-lg"> MANOBIKOTAY KISHOREGANJ</span> | All Rights Reserved</p>
+      </div>
+    </div>
+  </section>
   <!-- footer section end -->
+
+
   
-  <p class="flex justify-center items-center font-serif texl-[6px] font-semibold py-8">@copyright Abdul Kadir - UYDO</p>
   
+
+  <script src="./project.js"></script>
   </body>
 </html>

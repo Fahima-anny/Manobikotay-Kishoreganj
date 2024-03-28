@@ -1,634 +1,1159 @@
 <!doctype html>
-<html>
+<html data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humaniity in Kishoreganj</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" type="image/x-icon">
   <link href="./output.css" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
- 
-
-<style>
-
-.navSection{
-  box-shadow: 0 0 8px 1px rgb(31, 31, 31) ;
-}
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-#project-1{
-  background-image: url(https://i.ibb.co/Jt0ZPFs/no1.png);
-  border-radius: 10px;
-}
-#project-2{
-  background-image: url(https://i.ibb.co/wpFK28N/no2.png);
-  border-radius: 10px;
-}
-#project-3{
-  background-image: url(https://i.ibb.co/NpRgF32/no6.png);
-  border-radius: 10px;
-}
-#project-4{
-  background-image: url(https://i.ibb.co/PM1KFB7/no5.png);
-  border-radius: 10px;
-}
-#project-5{
-  background-image: url(https://i.ibb.co/mFvxXRT/no4.png);
-  border-radius: 10px;
-}
-#project-6{
-  background-image: url(https://i.ibb.co/BqkbgKp/no3.png);
-  border-radius: 10px;
-}
-
-/* 7 */
-.btn-7 {
-background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(18, 18, 18) 100%);
-  line-height: 30px;
-  padding: 0;
-  border: none;
-}
-.btn-7 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-7:before,
-.btn-7:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #f603ad;
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-7:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-7:hover{
-  color:#f603ad;
-  background: transparent;
-}
-.btn-7:hover:before {
-  height: 100%;
-}
-.btn-7:hover:after {
-  width: 100%;
-}
-.btn-7 span:before,
-.btn-7 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #f603ad;
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-7 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-7 span:hover:before {
-  height: 100%;
-}
-.btn-7 span:hover:after {
-  width: 100%;
-}
-
-
-.custom-btn {
-  font-family: 'Lato', sans-serif;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(177, 177, 177, 0.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-
-#spendMoneySection{
-  background-image: url(https://i.ibb.co/Z8H0xf5/international-day-girl-child-1001710-6147.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.justi{
-  text-align: justify;
-}
+  <style>
+    .navSection {
+      box-shadow: 0 0 8px 1px rgb(31, 31, 31);
+    }
 
 
 
-@media screen and (max-width:567px) {
 
-  #justi{
-  text-align: center;
+    /* 7 */
+    .btn-7 {
+      background: linear-gradient(0deg, rgb(10, 10, 10) 0%, rgb(18, 18, 18) 100%);
+      line-height: 30px;
+      padding: 0;
+      border: none;
+    }
+
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: #f603ad;
+      box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-7:before {
+      height: 0%;
+      width: 2px;
+    }
+
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+
+    .btn-7:hover {
+      color: #f603ad;
+      background: transparent;
+    }
+
+    .btn-7:hover:before {
+      height: 100%;
+    }
+
+    .btn-7:hover:after {
+      width: 100%;
+    }
+
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: #f603ad;
+      box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+
+
+    .custom-btn {
+      font-family: 'Lato', sans-serif;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      box-shadow: inset 2px 2px 2px 0px rgba(177, 177, 177, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+      outline: none;
+    }
+
+
+    #expenditureSection {
+      background-image: url(https://i.ibb.co/Z8H0xf5/international-day-girl-child-1001710-6147.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .justi {
+      text-align: justify;
+    }
+
+.shad{
+  box-shadow: 0 0 10px 1px gray;
 }
 
-body{
-  text-align: center;
-}
-  
-}
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.carousel-item2 {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.carousel-item3 {
+    transition: opacity 0.5s ease-in-out;
+  }
 
 
-</style>
+
+
+
+    @media screen and (max-width:567px) {
+
+      #justi {
+        text-align: center;
+      }
+
+      body {
+        text-align: center;
+      }
+
+    }
+
+
+
+  </style>
 
 
 </head>
+
 <body class="relative">
 
-<!-- nav section start  -->
-<section class="bg-[#fc99df]  fixed w-full z-50 navSection px-0 md:px-28">
-  <div class="navbar">
-    <div class="navbar-start ">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+  <!-- nav section start  -->
+  <section class="bg-black border-b-4 border-b-[#f603ad] fixed w-full z-50 navSection px-0 md:px-28">
+    <div class="navbar">
+      <div class="navbar-start ">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-5 h-5 stroke-current text-white font-extrabold">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-52">
+            <li><a href="#bannerSection">Home</a></li>
+            <li><a href="#aboutSection">About</a></li>
+            <li><a href="#focusSection">Focus</a></li>
+            <li><a href="#campaignSection">Campaigns</a></li>
+            <li><a href="#recentSectionForSmDevice">Recents</a></li>
+            <li><a href="#expenditureSection">Expenditure</a></li>
+            <li><a href="#committeeSection">Committee</a></li>
+            <li><a href="#contactSection">Contact</a></li>
+          </ul>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-60">
-          <li><a>Home</a></li>
-          <li>
-            <a>Menu</a>
-            <ul class="p-2">
-              <li><a>About</a></li>
-              <li><a>Focus</a></li>
-              <li><a>Projects</a></li>
-              <li><a>Recents</a></li>
-              <li><a>Expenditure</a></li>
-              <li><a>Contact</a></li>
-            </ul>
-          </li>
-        </ul>
+        <!-- <a class=" text-xl text-black font-bold">MANOBIKOTAY KISHOREGANJ</a> -->
+        <div class=" pl-[20vw] md:pl-0 text-xl text-black font-bold flex gap-2 justify-center items-center">
+          <img class="h-[70px] w-[70px] rounded-full"
+            src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" alt="">
+          <a class=" text-sm text-white font-bold">KISHOREGANJ <br> in HUMANITY</a>
+        </div>
       </div>
-      <!-- <a class=" text-xl text-black font-bold">MANOBIKOTAY KISHOREGANJ</a> -->
-      <div class=" pl-[20vw] md:pl-0 text-xl text-black font-bold flex gap-2 justify-center items-center">
-        <img class="h-[70px] w-[70px] rounded-full" src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" alt="">
-        <a class=" text-sm text-black font-bold">MANOBIKOTAY KISHOREGANJ</a>
-      </div>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal pe-10 text-slate-700 font-[500] text-md">
-        <li><a>Home</a></li>
-        <!-- <li>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal pe-10 text-slate-200 font-[500] text-md">
+          <li class="hover:underline"><a href="#bannerSection">Home</a></li>
+          <!-- <li>
           <details>
             <summary>Menu</summary>
             <ul class="px-4"> -->
-              <li><a>About</a></li>
-              <li><a>Focus</a></li>
-              <li><a>Projects</a></li>
-              <li><a>Recents</a></li>
-              <li><a>Expenditure</a></li>
-              <li><a>Contact</a></li>
-            <!-- </ul>
+          <li class="hover:underline"><a href="#aboutSection">About</a></li>
+          <li class="hover:underline"><a href="#focusSection">Focus</a></li>
+          <li class="hover:underline"><a href="#campaignSection">Campaigns</a></li>
+          <li class="hover:underline"><a href="#recentSection">Recents</a></li>
+          <li class="hover:underline"><a href="#expenditureSection">Expenditure</a></li>
+          <li class="hover:underline"><a href="#committeeSection">Committee</a></li>
+          <li class="hover:underline"><a href="#contactSection">Contact</a></li>
+          <!-- </ul>
           </details>
         </li> -->
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <!-- <ul class="menu menu-horizontal pe-10 text-slate-600 font-bold text-lg">
-        <li><a>Home</a></li>
-        <li>
-          <details>
-            <summary>Menu</summary>
-            <ul class="px-4">
-              <li><a>About</a></li>
-              <li><a>Focus</a></li>
-              <li><a>Projects</a></li>
-              <li><a>Recents</a></li>
-              <li><a>Expenditure</a></li>
-              <li><a>Contact</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul> -->
-      <a class="hidden md:block btn bg-black text-white text-xl font-semibold border-0 hover:bg-black hover:ring-2  hover:ring-white ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">Donate Now</a>
-    </div>
-  </div>
-</section>
-<!-- nav section end -->
-
-
-<!-- bannar section started  -->
-<div>
-<!-- for small device only start  -->
-<div class="pt-28 text-center mx-auto flex flex-col justify-center items-center md:hidden ">
-  <div class=" flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-    <img src="https://i.ibb.co/dMk8bDc/manobikotay-kg.jpg" class="h-[200px] rounded-full" alt="">
-  </div>
-  <h1 class="text-5xl font-bold block">MANOBIKOTAY KISHOREGANJ</h1>
-  <p class=" text-2xl fw-bold py-4  block  ">No one has ever become poor by <span class="text-[#f603ad] font-bold">GIVING</span> .  </p>
-    <button class="btn text-black font-bold  bg-[#fc99df] text-2xl fw-bold py-2  flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
-      <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
-      <p class="">SUPPORT US</p>
-    </button>
-  </div>
-<!-- for small device only end  -->
-
-<!-- for all device start  -->
-<div class="carousel w-full mt-[10vh]">
-  <div id="slide1" class="carousel-item relative w-full h-fit md:h-screen">
-    <div class="bg-black bg-opacity-80 absolute h-full w-full"></div>
-    <img src="https://i.ibb.co/HpBNjb2/girl-park.jpg" class="w-full " />
-    <div class="absolute inset-0 flex  items-center justify-center">
-      
-      <div class="text-center mx-auto">
-        <div class="hidden md:flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><img src="https://i.ibb.co/dMk8bDc/manobikotay-kg.jpg" class="h-[200px] rounded-full" alt=""></div>
-        <h1 class="text-5xl font-bold text-white hidden md:block ">MANOBIKOTAY KISHOREGANJ</h1>
-        <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">No one has ever become poor by <span class="text-[#fc99df] font-bold">GIVING</span> .  </p>
-          <button class="btn text-black font-bold  bg-[#fc99df] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
-            <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
-            <p class="">SUPPORT US</p>
-          </button>
-        </div>
-    </div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" class="btn btn-circle">❮</a> 
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" class="carousel-item relative w-full h-fit md:h-screen">
-    <div class="bg-black bg-opacity-80 absolute h-full w-full"></div>
-    <img src="https://i.ibb.co/Y3qRZqd/bannar2.jpg" class="w-full" />
-    <div class="absolute inset-0 flex  items-center justify-center">
-
-   <div class="text-center mx-auto">
-        <div class="hidden md:flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><img src="https://i.ibb.co/dMk8bDc/manobikotay-kg.jpg" class="h-[200px] rounded-full" alt=""></div>
-        <h1 class="text-5xl font-bold text-white hidden md:block ">MANOBIKOTAY KISHOREGANJ</h1>
-        <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">It is not <span class="text-[#fc99df] font-bold">Charity</span> , <br> It is our <span class="text-[#fc99df] font-bold">Responsibility </span></p>
-          <button class="btn text-black font-bold  bg-[#fc99df] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
-            <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
-            <p class="">SUPPORT US</p>
-          </button>
-        </div>
-    </div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle">❮</a> 
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div class="hero-overlay bg-opacity-60"></div> 
-  <div id="slide3" class="carousel-item relative w-full h-fit md:h-screen">
-    <div class="bg-black bg-opacity-80 absolute h-full w-full"></div>
-   
-    <img src="https://i.ibb.co/nBfmBQZ/bannar3.jpg" class="w-full" />
-   
-    <div class="absolute inset-0 flex  items-center justify-center">
-
-      <div class="text-center mx-auto">
-        <div class="hidden md:flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><img src="https://i.ibb.co/dMk8bDc/manobikotay-kg.jpg" class="h-[200px] rounded-full" alt=""></div>
-        <h1 class="text-5xl font-bold text-white hidden md:block ">MANOBIKOTAY KISHOREGANJ</h1>
-        <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">They need your <span class="text-[#fc99df] font-bold">HELP</span> & <span class="text-[#fc99df] font-bold">SUPPORT</span>  </p>
-          <button class="btn text-black font-bold  bg-[#fc99df] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
-            <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
-            <p class="">SUPPORT US</p>
-          </button>
-        </div>
-    </div>
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle">❮</a> 
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div> 
-</div>
-<!-- for all device end  -->
-</div>
-<!-- bannar section end  -->
-
-
-
-<!-- About section started  -->
-<div>
-<h1 class="mt-5 md:mt-20 mx-3 md:mx-20 xl:mx-40 text-[#f603ad] font-extrabold text-3xl font-serif text-center">"GENEROSITY IS GIVING MORE THAN YOU CAN, AND PRIDE IS TAKING LESS THAN YOU NEED ." <span class="text-xl block text-slate-700">- Khalil Gibran</span></h1>
-<!-- About section for large device started  -->
-<section class="hidden md:block">
-  <div class="h-[330px] w-full bg-[#fc99df] relative mt-[500px] border-t-8 border-t-black">
-  
-    <div class="md:mx-20 xl:mx-40  border p-10 bg-white absolute bottom-20 shadow-lg shadow-black">
-      <h1 class="pb-6 font-extrabold text-4xl font-serif text-center "> ABOUT US </h1>
-    <div class="grid  gap-7 justify-center items-center">
-      <div class="cols-7">
-      
-        <img class="border-2 border-black" src="https://i.ibb.co/y5J9d0F/49865849492.png" class="" alt="">
+        </ul>
       </div>
-      <div class="cols-5 flex flex-col ">
-       
-    <p class=" font-medium justi">
-      The organization "Manobikotay Kishoreganj" was established on October 10,
-      2019, with the noble mission of serving humanity.The organization has been
-       dedicated to various charitable activities, including education, healthcare,
-        disaster relief, and women's empowerment ,Tree Plantation , Environment
-         Pollution , Assistance to Meritorious Students , Helping disadvanced Sick
-          People. With a team of 28 committed members, including volunteers and
-           professionals, we strive to make a positive impact on society. Our primary
-            focus is to provide assistance to the underprivileged and contribute to
-             their well-being.</p>
-             <h1 class="font-bold text-[#f603ad] ">President : <span class="text-black"> Md. Mahbubur Rahman (Sagor)</span></h1>
-             <h1 class="font-bold text-[#f603ad] "> General Secretary & Founder:<span class="text-black">Md. Murad Ahmed</span> </h1>
-
+      <div class="navbar-end">
+        <button
+          class="hidden md:flex justify-center items-center btn bg-[#f975d1] text-black text-xl font-semibold border-0 hover:bg-[#fc99df] hover:ring-2 hover:ring-white ease-in-out delay-150 duration-500" onclick="donate_modal_5.showModal()">Donate Now</button>
       </div>
     </div>
-    </div>
-  </div>
   </section>
-  <!-- About section for large device end  -->
+  <!-- nav section end -->
 
-<!-- About section for small device started  -->
-<section class="block md:hidden p-3">
+
+  <!-- bannar section started  -->
+  <div id="bannerSection">
+    <!-- for small device only start  -->
+    <div class="pt-28 text-center mx-auto flex flex-col justify-center items-center md:hidden ">
+      <div class="flex justify-center mb-5">
+        <img src="https://i.ibb.co/dMk8bDc/manobikotay-kg.jpg" class="h-[200px] rounded-full" alt="">
+      </div>
+      <h1 class="text-3xl font-bold text-black">মানবিকতায় কিশোরগঞ্জ </h1>
+      <h1 class="text-2xl font-bold block mt-3 text-[#f603ad] font-serif"> (KISHOREGANJ in HUMANITY)</h1>
+      <h1 class="text-2xl font-semibold block mt-1 font-serif"> Registration : Kishoreganj Sodor - 139 </h1>
+     
+      <p class=" text-2xl font-semibold pt-1 pb-4 block  ">No one has ever become poor by <span
+          class="text-[#f603ad] font-bold">GIVING</span> . </p>
+      <button
+        class="btn text-black font-bold  bg-[#f975d1] text-2xl fw-bold py-2  flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 duration-300  hover:bg-[#f975d1]">
+        <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
+        <p class=""><a href="#contactSection"> Join Us</a></p>
+      </button>
+    </div>
+    <!-- for small device only end  -->
+
+    <!-- for all device start  -->
+    <div class="carousel w-full mt-[10vh]">
+      <div id="slide1" class="carousel-item relative w-full h-fit md:h-screen">
+        <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+        <img src="https://i.ibb.co/YBh5xjc/84223726025-1.png" class="w-full " />
+        <div class="absolute inset-0 flex  items-center justify-center">
+        
+          <div class="text-center mx-auto">
+            <div class="hidden md:flex justify-center mb-5"><img src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg"
+                class="h-[200px] rounded-full" alt=""></div>
+            <h1 class="text-4xl font-bold text-white hidden md:block ">মানবিকতায় কিশোরগঞ্জ </h1>
+            <h1 class="text-xl mt-3 font-bold font-serif text-white hidden md:block ">(KISHOREGANJ
+              in HUMANITY) </h1>
+            <h1 class="text-xl mt-3 font-medium font-serif text-white hidden md:block ">Registration : Kishoreganj Sodor - 139  </h1>
+            <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">No one has ever become poor by <span
+                class="text-[#fc99df] font-bold">GIVING</span> . </p>
+            <button
+              class="btn text-black font-bold  bg-[#f975d1] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-0 hover:ring-2 hover:ring-white ease-in-out delay-150 duration-300  hover:bg-[#fd6fd3]">
+              <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
+              <p class=""><a href="#contactSection"> Join Us</a></p>
+            </button>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full h-fit md:h-screen">
+        <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+        <img src="https://i.ibb.co/kmy6mvq/49393079716.png" class="w-full" />
+        <div class="absolute inset-0 flex  items-center justify-center">
+
+          <div class="text-center mx-auto">
+            <div
+              class="hidden md:flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+              <img src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" class="h-[200px] rounded-full" alt=""></div>
+            <h1 class="text-4xl font-bold text-white hidden md:block ">মানবিকতায় কিশোরগঞ্জ </h1>
+            <h1 class="text-xl mt-3 font-bold font-serif text-white hidden md:block ">(KISHOREGANJ
+              in HUMANITY) </h1>
+              <h1 class="text-xl mt-3 font-medium font-serif text-white hidden md:block ">Registration : Kishoreganj Sodor - 139  </h1>
+            <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">It is not <span
+                class="text-[#f603ad] font-bold">Charity</span> , <br> It is our <span
+                class="text-[#f603ad] font-bold">Responsibility </span></p>
+            <button
+              class="btn text-black font-bold  bg-[#f975d1] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
+              <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
+              <p class=""><a href="#contactSection"> Join Us</a></p>
+            </button>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full h-fit md:h-screen">
+        <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+
+        <img src="https://i.ibb.co/yfW77Wp/Iftari-Img3-1.png" class="w-full" />
+
+        <div class="absolute inset-0 flex  items-center justify-center">
+
+          <div class="text-center mx-auto">
+            <div
+              class="hidden md:flex justify-center mb-5  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+              <img src="https://i.ibb.co/W35JBBC/286172238-107963948606017-5570824967966276924-n.jpg" class="h-[200px] rounded-full" alt=""></div>
+            <h1 class="text-4xl font-bold text-white hidden md:block ">মানবিকতায় কিশোরগঞ্জ </h1>
+            <h1 class="text-xl mt-3 font-bold font-serif text-white hidden md:block ">(KISHOREGANJ
+              in HUMANITY) </h1>
+              <h1 class="text-xl mt-3 font-medium font-serif text-white hidden md:block ">Registration : Kishoreganj Sodor - 139  </h1>
+            <p class="text-white text-2xl font-semibold py-4 block px-20 md:px-0">They need your <span
+                class="text-[#f975d1] font-bold">HELP</span> & <span class="text-[#f975d1] font-bold">SUPPORT</span>
+            </p>
+            <button
+              class="btn text-black font-bold  bg-[#f975d1] text-2xl fw-bold py-2 hidden md:flex justify-center items-center mx-auto border-2 border-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:bg-[#f603ad]">
+              <img src="https://i.ibb.co/wYrCRbf/right-arrow-3.png" alt="">
+              <p class=""><a href="#contactSection"> Join Us</a></p>
+            </button>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- for all device end  -->
+  </div>
+  <!-- bannar section end  -->
+
+
+
+  <!-- About section started  -->
+  <div id="aboutSection">
+    <h1
+      class="mt-5 md:mt-20 mx-3 md:mx-20 xl:mx-40 text-[#f603ad] font-extrabold text-2xl md:text-3xl font-serif text-center">
+      "GENEROSITY IS GIVING MORE THAN YOU CAN, AND PRIDE IS TAKING LESS THAN YOU NEED ." <span
+        class="text-xl block text-slate-700">- Khalil Gibran</span></h1>
+    <!-- About section for large device started  -->
+    <section class="hidden md:block">
+      <div class="h-[330px] w-full bg-[#f975d1] relative mt-[440px] border-t-8 border-t-black">
+
+        <div class="md:mx-20 xl:mx-40  border p-10 bg-white absolute bottom-20 shadow-lg shadow-black rounded-lg">
+          <h1 class="pb-6 font-extrabold text-4xl font-serif text-center "> ABOUT US </h1>
+          <div class="grid  gap-7 justify-center items-center">
+            <div class="cols-7">
+
+              <img class="border-2 border-black" src="https://i.ibb.co/y5J9d0F/49865849492.png" class="" alt="">
+            </div>
+            <div class="cols-5 flex flex-col ">
+
+              <p class=" font-medium justi">
+                The organization "Manobikotay Kishoreganj" was established on October 10,
+                2019, with the noble mission of serving humanity.The organization has been
+                dedicated to various charitable activities, including education, healthcare,
+                disaster relief, and women's empowerment ,Tree Plantation , Environment
+                Pollution , Assistance to Meritorious Students , Helping disadvanced Sick
+                People. With a team of 28 committed members, including volunteers and
+                professionals, we strive to make a positive impact on society. Our primary
+                focus is to provide assistance to the underprivileged and contribute to
+                their well-being.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section for large device end  -->
+
+    <!-- About section for small device started  -->
+    <section class="block md:hidden p-3">
 
       <h1 class="py-6 font-extrabold text-4xl font-serif text-center "> ABOUT US </h1>
-    
-    <div class="grid  gap-7 justify-center items-center">
-      <div class="cols-7">
-        <img src="https://i.ibb.co/9W7Hq91/banner1.jpg" class="" alt="">
-      </div>
-      <div class="cols-5 flex flex-col ">
-    <p class="mt-3 font-medium justi">
-      The organization "Manobikotay Kishoreganj" was established on October 10,
-      2019, with the noble mission of serving humanity.The organization has been
-       dedicated to various charitable activities, including education, healthcare,
-        disaster relief, and women's empowerment ,Tree Plantation , Environment
-         Pollution , Assistance to Meritorious Students , Helping disadvanced Sick
-          People. With a team of 28 committed members, including volunteers and
-           professionals, we strive to make a positive impact on society. Our primary
+
+      <div class="grid  gap-7 justify-center items-center">
+        <div class="cols-7">
+          <img src="https://i.ibb.co/9W7Hq91/banner1.jpg" class="" alt="">
+        </div>
+        <div class="cols-5 flex flex-col ">
+          <p class="mt-3 font-medium justi">
+            The organization "Manobikotay Kishoreganj" was established on October 10,
+            2019, with the noble mission of serving humanity.The organization has been
+            dedicated to various charitable activities, including education, healthcare,
+            disaster relief, and women's empowerment ,Tree Plantation , Environment
+            Pollution , Assistance to Meritorious Students , Helping disadvanced Sick
+            People. With a team of 28 committed members, including volunteers and
+            professionals, we strive to make a positive impact on society. Our primary
             focus is to provide assistance to the underprivileged and contribute to
-             their well-being.</p>
-             <h1 class="font-bold text-[#f603ad] mt-3">President : <span class="text-black"> Md. Mahbubur Rahman (Sagor)</span></h1>
-             <h1 class="font-bold text-[#f603ad] "> General Secretary & Founder:<span class="text-black">Md. Murad Ahmed</span> </h1>
-    </div>
-  </div>
-  </section>
+            their well-being.</p>
+        </div>
+      </div>
+    </section>
     <!-- About section for small device end  -->
-</div>
-<!-- About section end  -->
-
-
-<!-- Projects section start  -->
-<div>
-<h1 class="mt-5 md:mt-20 mx-3 md:mx-20 xl:mx-40 text-[#f603ad] font-extrabold text-3xl font-serif text-center">"SERVICE TO OTHERS IS THE RENT YOU PAY FOR YOUR ROOM HERE IN EARTH." <span class="text-xl block text-slate-700">- Muhammad Ali</span></h1>
-
-  <section class="px-5 md:px-20 xl:px-40 pb-20 pt-16" id="projectSection">
-    <h1 class="pb-10 font-extrabold text-4xl font-serif text-center text-[#272002]">OUR CAMPAIGNS </h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-<div class="col">
-  <div class="card bg-base-100 shadow-md shadow-black hover:shadow-black hover:shadow-lg rounded-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-    <figure>  <div class=""><img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" alt=""></div></figure>
-    <div class="card-body">
-      <h2 class="card-title font-bold">Blood Donation Campaign</h2>
-      <button class="w-3/4 mx-auto  hover:shadow-sm hover:shadow-slate-600 bg-[#fc99df] hover:bg-[#f603ad] text-xl text-black font-bold btn border-0 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mt-8"><a href="" target="_blank">See More</a></button>
-    </div>
   </div>
-</div>
-<div class="col ">
-  <div class=" card bg-base-100 shadow-md shadow-black hover:shadow-black hover:shadow-lg rounded-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-    <figure>  <div class=""><img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" alt=""></div></figure>
-    <div class="card-body">
-      <h2 class="card-title font-bold">Donation of winter clothes </h2>
-      <button class="w-3/4 mx-auto  hover:shadow-sm hover:shadow-slate-600 bg-[#fc99df] hover:bg-[#f603ad] text-xl text-black font-bold btn border-0 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mt-8"><a href="" target="_blank">See More</a></button>
-    </div>
-  </div>
-</div>
-<div class="col ">
-  <div class=" card bg-base-100 shadow-md shadow-black hover:shadow-black hover:shadow-lg rounded-none ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-    <figure>  <div class=""><img src="https://i.ibb.co/K6ngFNq/84223726025.png" alt=""></div></figure>
-    <div class="card-body">
-      <h2 class="card-title font-bold">Free Blood Test Campaign</h2>
-      <button class="w-3/4 mx-auto hover:shadow-sm hover:shadow-slate-600 bg-[#fc99df] hover:bg-[#f603ad] text-xl text-black font-bold btn border-0 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mt-8"><a href="" target="_blank">See More</a></button>
-    </div>
-  </div>
-</div>
-    </div>
+  <!-- About section end  -->
 
-    <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-20">
+
+  <!-- focus section start  -->
+  <section class="pt-20 pb-7" id="focusSection">
+
+    <div class="grid grid-cols-2 md:grid-cols-6">
+
+      <div class="col flex justify-center items-center flex-col bg-black px-3 ">
+        <h1 class="text-center text-[#f603ad] font-semibold text-3xl"> FOCUS AREAS</h1>
+        <p class="text-slate-400 font-semibold text-lg">KISHOREGANJ IN HUMANITY works for Tree Plantation, Education, Environment Pollution, Health Care, Self Dependent ect .</p>
+
+        </div>
+<div class="col relative">
+  <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+<img src="https://i.ibb.co/Sm66T5Y/tree-Plantation.png" alt="">
+<div class="absolute top-1/3  w-full">
+<h1 class="text-center text-white font-bold text-2xl">TREE PLANTATION</h1>
+</div>
+</div>
+<div class="col relative">
+  <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+<img src="https://i.ibb.co/hWyhgt2/bachelor-education.png" alt="">
+<div class="absolute top-1/3  w-full">
+<h1 class="text-center text-white font-bold text-2xl">EDUCATION</h1>
+</div>
+</div>
+<div class="col relative">
+  <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+<img src="https://i.ibb.co/tQGxTJ0/5848517623.png" alt="">
+<div class="absolute top-1/3  w-full">
+<h1 class="text-center text-white font-bold text-2xl">ENVIRONMENT POLLUTION</h1>
+</div>
+</div>
+
+<div class="col relative">
+  <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+<img src="https://i.ibb.co/x31F4XY/doctor.png" alt="">
+<div class="absolute top-1/3  w-full">
+<h1 class="text-center text-white font-bold text-2xl">HEALTH CARE</h1>
+</div>
+</div>
+<div class="col relative">
+  <div class="bg-black bg-opacity-60 absolute h-full w-full"></div>
+<img src="https://i.ibb.co/rxGx4ht/dhaka-6709479-960-720.png" alt="">
+<div class="absolute top-1/3  w-full">
+<h1 class="text-center text-white font-bold text-2xl">SELF DEPENDENT</h1>
+</div>
+</div>
+
+
+</div>
+
+
+    </div>
+  </section>
+  <!-- focus section end -->
+
+
+
+  <!-- campaign section start  -->
+  <div id="campaignSection">
+    <h1
+      class="mt-5 md:mt-20 mx-3 md:mx-20 xl:mx-40 text-[#f603ad] font-extrabold  text-2xl md:text-3xl font-serif text-center">
+      "SERVICE TO OTHERS IS THE RENT YOU PAY FOR YOUR ROOM HERE IN EARTH." <span class="text-xl block text-slate-700">-
+        Muhammad Ali</span></h1>
+
+    <section class="px-3 md:px-20 xl:px-40 pb-20 pt-16" id="projectSection">
+      <h1 class="pb-10 font-extrabold text-4xl font-serif text-center text-[#272002]">OUR CAMPAIGNS </h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="col ">
+          <div
+            class="card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card1S1" class="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card1S2" class="carousel-item relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card1S3" class="carousel-item relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide('#card1S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+                
+              
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Helping Orphanage & Mosque</h2>
+<p class=""></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Helping Orphanage & Mosque</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para">
+          
+"In our efforts to support religious institutions, we have generously donated prayer mats, fans, microphones to mosques, and madrasas, along with copies of the Quran to orphanages, fostering an environment of spiritual growth and community well-being."
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-6">
          
-      <button class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-20  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">See More </a></button>
-      <button class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">Donate Now </a></button>
-    </div>
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now </button>
 
-  </section>
-</div>
-<!-- Projects section end  -->
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
 
-
-<!-- help section start  -->
-<section class="bg-[#fc99df] text-center px-0 md:px-20 py-20 border-t-8 border-t-black border-b-8 border-b-black">
-  <h1 class="text-white text-4xl font-semibold">DO YOU WANT TO WORK FOR THE DISADVANTAGED PEOPLE ? <br class="hidden md:block"> THEN JOIN OUR TEAM NOW</h1>
-
-  <h1 class="font-bold text-3xl mt-8 underline hover text-black  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><a href="">BECOME A VOLUNTEER</a></h1>
-
-</section>
-<!-- help section end -->
-
-
-<!-- recent activity section  start  -->
-<div>
-<!-- for large device start  -->
-<section class="hidden md:block">
-  <div class="h-[370px] w-full bg-[#fc99df] relative mt-[400px] border-t-8 border-t-black">
-  
-    <div class="md:mx-20 xl:mx-40  border p-10 bg-white absolute bottom-20 shadow-lg shadow-black">
-  
-      <h1 class="pb-5 font-extrabold text-4xl font-serif text-center text-[#f603ad]">Give a Little , Change a Lot  </h1>
-      <h1 class="pb-6 font-extrabold text-4xl font-serif text-center "> RECENT ACTIVITIES  </h1>
-    
-    <div class="grid grid-cols-2 gap-10 justify-center items-center">
-      <div>
-        <img src="https://i.ibb.co/RDWFm4x/iftari-Img1.png" class="" alt="">
+        </div>
+      
+      </DIV>
+      
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2  hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
       </div>
-      <div class="flex flex-col ">
-        <h1 class="font-bold text-black text-3xl">Ramadan Iftaar Distribution </h1>
-        <h1 class="font-bold text-[#f603ad] text-2xl">whole 30 Days </h1>
-    <p class="mt-3 font-medium justi">
-      We have been organizing this event every Ramadan since 2010. Our goal is to distribute iftar meals among the economically disadvantaged fasting individuals, despite the high cost of daily necessities. The most significant aspect for us is finding peace through distributing iftar. Therefore, we continue to organize this event every year. This time too, the iftar distribution program will continue uninterrupted in various locations in Kishoreganj city of Kishoreganj district during the month of Ramadan. However, anyone interested can participate in this service-oriented program.</p>
-      </div>
-    
-    </div>
-    
-    <div class="flex flex-row justify-center items-center gap-10 mt-10">
-             
-      <button class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-16  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">Contact Us</a></button>
-      <button class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">Donate Now </a></button>
-    </div>
-    </div>
-  
+      
+    <!-- <div class="modal-action">
+   
+    </div> -->
   </div>
-  </section>
-<!-- for large device end  -->
+</dialog>
 
-<!-- for small device start  -->
-<section class="block md:hidden">
- 
-  
-    <div class=" p-10 ">
-  
-      <h1 class="pb-5 font-extrabold text-4xl font-serif text-center text-[#f603ad]">Give a Little , Change a Lot  </h1>
-      <h1 class="pb-6 font-extrabold text-4xl font-serif text-center "> RECENT ACTIVITIES  </h1>
-    
-    <div class="grid grid-cols-1 gap-4 justify-center items-center">
-      <div>
-        <img src="https://i.ibb.co/RDWFm4x/iftari-Img1.png" class="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+               
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card2S1" class="carousel-item2 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card2S2" class="carousel-item2 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card2S3" class="carousel-item2 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide2('#card2S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold  text-center mx-auto">Unprivileged Girl's Marriage</h2>
+              <p class=""></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_3.showModal()">Details</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+      <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+     <h1 class="font-bold text-2xl mb-5">Unprivileged Girl's Marriage</h1>
+        <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> "We have extended a helping hand to facilitate the marriage of 19 underprivileged girls, ensuring they embark on their new journey with the necessary financial support and dignity. Our collective effort embodies the essence of compassion and solidarity, fostering hope and brighter futures for those in need."
+     </p>
+        <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-6">
+         
+          <button
+          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 ">Exit</button>
+          </form>
+        </div>
+      </DIV>
+      <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+      <div class="hover:border-white border-slate-300 border-2  hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+      </DIV>
+        
       </div>
-      <div class="flex flex-col ">
-        <h1 class="font-bold text-black text-3xl">Ramadan Iftaar Distribution </h1>
-        <h1 class="font-bold text-[#f603ad] text-2xl">whole 30 Days </h1>
-    <p class="mt-3 font-medium justi">
-      We have been organizing this event every Ramadan since 2010. Our goal is to distribute iftar meals among the economically disadvantaged fasting individuals, despite the high cost of daily necessities. The most significant aspect for us is finding peace through distributing iftar. Therefore, we continue to organize this event every year. This time too, the iftar distribution program will continue uninterrupted in various locations in Kishoreganj city of Kishoreganj district during the month of Ramadan. However, anyone interested can participate in this service-oriented program.</p>
+      
+    <!-- <div class="modal-action">
+   
+    </div> -->
+  </div>
+</dialog>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col ">
+          <div
+            class=" card h-[480px] bg-base-100 shadow-md shadow-slate-700 hover:shadow-slate-700 hover:shadow-lg rounded-lg ease-in-out delay-150 duration-300">
+            <figure>
+              <div class="">
+            
+                <div class="carousel w-full">
+                  <!-- Slide 1 -->
+                  <div id="card3S1" class="carousel-item3 relative w-full">
+                    <img src="https://i.ibb.co/X3TP3H2/325256456-543854214375589-6325688793211401018-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S3')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S2')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 2 -->
+                  <div id="card3S2" class="carousel-item3 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/K6ngFNq/84223726025.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S1')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S3')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                
+                  <!-- Slide 3 -->
+                  <div id="card3S3" class="carousel-item3 relative w-full hidden"> <!-- Initially hidden -->
+                    <img src="https://i.ibb.co/3SrZyW7/433344466-2851866204953989-6524667155811947185-n.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S2')">❮</a> <!-- Navigation to previous slide -->
+                      <a href="javascript:void(0)" class="btn btn-circle" onclick="changeSlide3('#card3S1')">❯</a> <!-- Navigation to next slide -->
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold text-center mx-auto">Helping Poor Patients</h2>
+              <p class=""></p>
+              <button class="custom-btn btn-7 text-xl mt-3 font-bold btn border-0 mx-auto w-5/6" onclick="my_modal_4.showModal()">Details</button>
+              <dialog id="my_modal_4" class="modal">
+                <div class="bg-white w-[90vw] border-black border-2 p-3 md:p-10">
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-16 pb-0 md:pb-16">
+                    <DIV class="col order-2 lg:order-1 flex items-center lg:items-start justify-center flex-col">
+                   <h1 class="font-bold text-2xl mb-5">Helping Poor Patients</h1>
+                      <p class="text-md font-semibold text-amber-900 bannerIntro leading-7 justi" id="para"> 
+                        "We have provided assistance to 35 impoverished patients, offering them care and support in their time of need. Although saddened by the loss of 7 individuals, we remain committed to ensuring the well-being of those under our care, continuing our efforts to alleviate suffering and promote health for all."
+                   </p>
+                      <div class="flex flex-col md:flex-row  justify-center lg:justify-start items-center gap-2 md:gap-5 mt-3">
+                       
+                        <button
+                        class="custom-btn btn-7 text-2xl font-bold btn border-0 px-3 ease-in-out delay-150 duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button
+                          class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 duration-300 ">Exit</button>
+                        </form>
+                      </div>
+                    </DIV>
+                    <DIV class="col order-1 lg:order-2 flex justify-center items-center">
+                    <div class="hover:border-white border-slate-300 border-2 hover:ring-2  ease-in-out delay-150 duration-300"><img src="https://i.ibb.co/87cLpgS/27306251658.png" alt=""></div>
+                    </DIV>
+                      
+                    </div>
+                    
+                  <!-- <div class="modal-action">
+                 
+                  </div> -->
+                </div>
+              </dialog>
+              
+            </div>
+          </div>
+        </div>
       </div>
-    
-    </div>
-    
-    <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-10">
-             
-      <button class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-16  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">Contact Us</a></button>
-      <button class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "><a href="./index - projects.html" target="_blank">Donate Now </a></button>
-    </div>
-    </div>
+
+
+      <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-20">
+        <button class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-20 ease-in-out delay-150 duration-300 "><a
+            href="./projects.html" target="_blank">View More </a></button>
+        <button class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 duration-300 "  onclick="donate_modal_5.showModal()">Donate Now </button>
+
+      
+
+      </div>
+
+    </section>
+  </div>
+  <!-- campaign section end  -->
+
+
+
+<!-- donate now Modal start  -->
+<div>
+  <!-- Open the modal using ID.showModal() method -->
+<dialog id="donate_modal_5" class="modal">
+
+  <div
+  class="modal-box bg-white text-center px-3 md:px-8 py-10  shadow-black shadow-md rounded-lg">
+  <h1 class="text-black text-4xl font-semibold">Thank You</h1>
+
+  <h1 class="font-bold text-yellow-950 text-xl mt-9"><a href=""> Bkash/Nagad/Rocket : <br class="md:hidden"> <span
+        class="text-black"> +8801716 958239</span></a></h1>
+        <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account :<span
+          class="font-bold text-black"> Manobikotay Kishoreganj</span></a></h1>
   
-  </section>
-<!-- for small device end  -->
+    <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account No. :<span
+          class="font-bold text-black"> 0100247849593</span></a></h1>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+            class="justify-center items-center btn bg-black text-[#f975d1] text-xl font-semibold border-0 hover:bg-black hover:ring-2 hover:ring-white ease-in-out delay-150 duration-500">Close</button>
+          </form>
+
 </div>
-<!-- recent activity section end -->
+
+  <div class="">
+  
+ 
+    </div>
+  </div>
+</dialog>
+</div>
+<!-- donate now Modal end -->
 
 
-<!-- spend money section start  -->
-<section id="spendMoneySection" class="relative text-center hero mb-0 md:mb-52">
 
-<!--large device donate now section start  -->
-<div class="hidden md:block bg-[#fc99df] text-center p-16 absolute object-none object-center bottom-[-180px] border-8 border-black">
-  <h1 class="text-white text-4xl font-semibold">SMALL OF YOUR DONATION CAN <br class="hidden md:block"> CHANGE SOMEONE'S FUTURE</h1>
+  <!-- become volunteer section start  -->
+  <section
+    class="bg-[#f975d1] text-center px-0 md:px-20 xl:px-40 py-20 shadow-black shadow-md">
+    <h1 class="text-white text-4xl font-semibold font-serif">DO YOU WANT TO WORK FOR THE DISADVANTAGED PEOPLE ?  THEN JOIN OUR TEAM NOW</h1>
 
-  <h1  class="font-bold text-yellow-950 text-xl mt-9 hover  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><a href=""> Bkash/Nagad/Rocket :<span class="font-extrabold text-black"> +8801916 359343</span></a></h1>
+    <button
+      class="custom-btn btn-7 mt-8 bg-white hover:bg-white text-2xl font-bold btn border-0 px-5  ease-in-out delay-150 duration-300 ">
+      <a href="#contactSection">BECOME A VOLUNTEER </a></button>
 
-  <h1 class="font-bold text-black text-3xl mt-8 underline hover  ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><a>DONATE NOW</a></h1>
+  </section>
+  <!-- become volunteer section end -->
 
+
+
+  <!-- recent activity section  start  -->
+  <div>
+    <!-- for large device start  -->
+    <section class="hidden md:block" >
+      <div class="h-[370px] w-full bg-[#f975d1] relative mt-[400px] border-t-8 border-t-black ">
+
+        <div class="md:mx-20 xl:mx-40  border p-10 bg-white absolute bottom-20 shadow-lg shadow-black rounded-lg" id="recentSection">
+
+          <h1 class="pb-5 font-extrabold text-2xl md:text-3xl font-serif text-center text-[#f603ad]">Give a Little ,
+            Change a Lot </h1>
+          <h1 class="pb-6 font-extrabold text-4xl font-serif text-center " > RECENT ACTIVITIES </h1>
+
+          <div class="grid grid-cols-2 gap-10 justify-center items-center">
+            <div>
+              <img src="https://i.ibb.co/RDWFm4x/iftari-Img1.png" class="" alt="">
+            </div>
+            <div class="flex flex-col ">
+              <h1 class="font-bold text-black text-3xl">Ramadan Iftaar Distribution </h1>
+              <h1 class="font-bold text-[#f603ad] text-2xl">whole 30 Days </h1>
+              <p class="mt-3 font-medium justi">
+                We have been organizing this event every Ramadan since 2010. Our goal is to distribute iftar meals among
+                the economically disadvantaged fasting individuals, despite the high cost of daily necessities. The most
+                significant aspect for us is finding peace through distributing iftar. Therefore, we continue to
+                organize this event every year. This time too, the iftar distribution program will continue
+                uninterrupted in various locations in Kishoreganj city of Kishoreganj district during the month of
+                Ramadan. However, anyone interested can participate in this service-oriented program.</p>
+            </div>
+
+          </div>
+
+          <div class="flex flex-row justify-center items-center gap-10 mt-10">
+
+            <button
+              class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 "><a
+                href="#contactSection">Contact Us</a></button>
+            <button
+              class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 "  onclick="donate_modal_5.showModal()">
+              Donate Now </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- for large device end  -->
+
+    <!-- for small device start  -->
+    <section class="block md:hidden">
+
+
+      <div class=" px-3 py-6">
+
+        <h1 class="pb-5 font-extrabold text-4xl font-serif text-center text-[#f603ad]">Give a Little , Change a Lot
+        </h1>
+        <h1 class="pb-6 font-extrabold text-4xl font-serif text-center "  id="recentSectionForSmDevice"> RECENT ACTIVITIES </h1>
+
+        <div class="grid grid-cols-1 gap-4 justify-center items-center">
+          <div>
+            <img src="https://i.ibb.co/RDWFm4x/iftari-Img1.png" class="" alt="">
+          </div>
+          <div class="flex flex-col ">
+            <h1 class="font-bold text-black text-3xl">Ramadan Iftaar Distribution </h1>
+            <h1 class="font-bold text-[#f603ad] text-2xl">whole 30 Days </h1>
+            <p class="mt-3 font-medium justi">
+              We have been organizing this event every Ramadan since 2010. Our goal is to distribute iftar meals among
+              the economically disadvantaged fasting individuals, despite the high cost of daily necessities. The most
+              significant aspect for us is finding peace through distributing iftar. Therefore, we continue to organize
+              this event every year. This time too, the iftar distribution program will continue uninterrupted in
+              various locations in Kishoreganj city of Kishoreganj district during the month of Ramadan. However, anyone
+              interested can participate in this service-oriented program.</p>
+          </div>
+
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-10 mt-10">
+
+          <button
+            class="custom-btn btn-7 text-2xl  font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 "><a
+              href="#contactSection">Contact Us</a></button>
+          <button
+            class="custom-btn btn-7 text-2xl font-bold btn border-0 px-16  ease-in-out delay-150  duration-300 " onclick="donate_modal_5.showModal()">Donate Now</button>
+        </div>
+      </div>
+
+    </section>
+    <!-- for small device end  -->
+  </div>
+  <!-- recent activity section end -->
+
+
+
+  <!-- expenditure section start  -->
+  <section id="expenditureSection" class=" text-center hero mb-10 md:mb-20">
+
+ 
+   
+    
+
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="pt-16 pb-16 md:pb-48">
+
+      <h1 class=" font-extrabold text-4xl font-serif text-center  text-white">AMOUNT OF SPENT MONEY </h1>
+
+      <ul class="timeline timeline-vertical mt-10">
+        <li>
+          <div
+            class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 duration-300">
+            <h1 class="font-extrabold text-xl">Year - 2019</h1>
+            <p class="font-semibold text-lg">Total spent <span class="font-bold  text-[#f603ad]"> 4,60,000/-</span>Tk
+              <br class="hidden md:block"> on our social activities</p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div
+            class="px-5 md:px-16 timeline-end timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 duration-300">
+            <h1 class="font-extrabold text-xl">Year - 2020</h1>
+            <p class="font-semibold text-lg">Total spent <span class="font-bold  text-[#f603ad]">4,38,000/-</span>Tk <br
+                class="hidden md:block"> on our social activities</p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div
+            class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 duration-300">
+            <h1 class="font-extrabold text-xl">Year - 2021</h1>
+            <p class="font-semibold text-lg">Total spent<span class="font-bold  text-[#f603ad]"> 11,82,000/-</span>Tk
+              <br class="hidden md:block"> on our social activities</p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div
+            class="px-5 md:px-16 timeline-end timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 duration-300">
+            <h1 class="font-extrabold text-xl">Year - 2022</h1>
+            <p class="font-semibold text-lg">Total spent<span class="font-bold  text-[#f603ad]"> 6,84,000/-</span>Tk <br
+                class="hidden md:block"> on our social activities</p>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div
+            class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 duration-300">
+            <h1 class="font-extrabold text-xl">Year - 2023</h1>
+            <p class="font-semibold text-lg">Total spent<span class="font-bold text-[#f603ad]"> 4,35,000/-</span> Tk <br
+                class="hidden md:block"> on our social activities</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <!-- expenditure section end  -->
+
+
+
+
+     <!--large device donate now section start  -->
+  <div
+  class="hidden md:block bg-[#f975d1] text-center  py-8  shadow-black shadow-md">
+  <h1 class="text-white text-4xl font-semibold font-serif">SMALL OF YOUR DONATION CAN <br class="hidden md:block"> CHANGE
+    SOMEONE'S FUTURE</h1>
+
+  <h1 class="font-bold text-yellow-950 text-xl mt-9"><a href=""> Bkash/Nagad/Rocket :<span
+        class="font-extrabold text-black">+8801716 958239</span></a></h1>
+
+  <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account :<span
+        class="font-extrabold text-black"> Manobikotay Kishoreganj</span></a></h1>
+
+  <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account No. :<span
+        class="font-extrabold text-black"> 0100247849593</span></a></h1>
+
+  <button
+    class="custom-btn btn-7 mt-8 bg-white hover:bg-white text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 duration-300 "  onclick="donate_modal_5.showModal()">Donate Now</button>
 
 </div>
 <!-- large device donate now section end  -->
 
 
 
-  <div class="hero-overlay bg-opacity-60"></div>
-  <div class="pt-16 pb-16 md:pb-48">
 
-    <h1 class=" font-extrabold text-4xl font-serif text-center  text-white">AMOUNT OF SPENT MONEY  </h1>
+  <!--small device donate now section start  -->
+  <div class="block md:hidden bg-[#f975d1] text-center py-4 px-3 object-none object-center">
+    <h1 class="text-white text-4xl font-semibold">SMALL OF YOUR DONATION CAN <br class="hidden md:block"> CHANGE
+      SOMEONE'S FUTURE</h1>
+      <h1 class="font-bold text-yellow-950 text-xl mt-9"><a href=""> Bkash/Nagad/Rocket : <br class="block md:hidden"> <span
+        class="font-extrabold text-black">+8801716 958239</span></a></h1>
+        
+  <h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account :<span
+    class="font-extrabold text-black"> Manobikotay Kishoreganj</span></a></h1>
+
+<h1 class="font-bold text-yellow-950 text-xl mt-2"><a href=""> Bank Account No. :<span
+    class="font-extrabold text-black"> 0100247849593</span></a></h1>
+
     
-    <ul class="timeline timeline-vertical mt-10">
-      <li>
-        <div class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-          <h1 class="font-extrabold text-xl">Year - 2019</h1>
-          <p class="font-semibold text-lg">Total spent <span class="font-bold  text-[#f603ad]" > 4,60,000/-</span>Tk <br class="hidden md:block">  on our social activities</p>
-        </div>
-        <hr/>
-      </li>
-      <li>
-        <hr/>
-        <div class="px-5 md:px-16 timeline-end timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-          <h1 class="font-extrabold text-xl">Year - 2020</h1>
-          <p class="font-semibold text-lg">Total spent <span class="font-bold  text-[#f603ad]" >4,38,000/-</span>Tk <br class="hidden md:block">  on our social activities</p>
-        </div>
-      <hr/>
-    </li>
-    <li>
-      <hr/>
-      <div class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-        <h1 class="font-extrabold text-xl">Year - 2021</h1>
-        <p class="font-semibold text-lg">Total spent<span class="font-bold  text-[#f603ad]" > 11,82,000/-</span>Tk <br class="hidden md:block">  on our social activities</p>
-      </div>
-      <hr/>
-    </li>
-    <li>
-      <hr/>
-      <div class="px-5 md:px-16 timeline-end timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-        <h1 class="font-extrabold text-xl">Year - 2022</h1>
-        <p class="font-semibold text-lg">Total spent<span class="font-bold  text-[#f603ad]" > 6,84,000/-</span>Tk <br class="hidden md:block">  on our social activities</p>
-      </div>
-      <hr/>
-    </li>
-    <li>
-      <hr/>
-      <div class="px-5 md:px-16 timeline-start timeline-box hover:shadow-md hover:shadow-black ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-        <h1 class="font-extrabold text-xl">Year - 2023</h1>
-        <p class="font-semibold text-lg">Total spent<span class="font-bold text-[#f603ad]" > 4,35,000/-</span> Tk <br class="hidden md:block">  on our social activities</p>
-      </div>
-    </li>
-  </ul>
+  <button
+  class="custom-btn btn-7 mt-8 bg-white hover:bg-white text-2xl font-bold btn border-0 px-16  ease-in-out delay-150 duration-300 "  onclick="donate_modal_5.showModal()">Donate Now</button>
+
+  </div>
+  <!--small device  donate now section end  -->
+
+
+
+  <!-- contact section start  -->
+  <section id="contactSection"
+    class=" rounded-lg pt-10 px-0 md:px-20 pb-20 mx-3 md:mx-20 xl:mx-40 my-20 shadow-lg shadow-black">
+    <h1 class="py-10 font-extrabold text-4xl font-serif text-center  text-black">CONTACT US </h1>
+
+    <div class="flex flex-col justify-center items-center gap-2 text-lg text-[#f603ad] font-bold text-center">
+      <h1><span class="text-black ">Phone No. :</span> +8801716 958239</h1>
+      <h1><span class="text-black ">What's App :</span> +8801716 958239</h1>
+      <h1><span class="text-black ">Social Media : </span><a href="https://www.facebook.com/Kishoreganjinhumanity" target="_blank"><span class="text-md hover:underline">মানবিকতায় কিশোরগঞ্জ</span> </a></h1>
+      <h1><span class="text-black ">Mailing Address :</span> manbikothaikishoreganj@gmail.com</h1>
+      <h1><span class="text-black">Office :</span> Sikandar Villa , Road-Nirala , Harua Road ,
+          Kishoreganj , Dhaka</h1>
+    </div>
+
+
+
+  </section>
+  <!-- contact section end -->
+
+
+
+<!-- commitee section start  -->
+<section class="px-3 md:px-20 xl:px-40 py-16" id="committeeSection">
+
+  <h1 class="pb-6 font-extrabold text-4xl font-serif text-center mb-10">FOUNDER</h1>
+  <div class="grid grid-cols-2 md:grid-cols-4 justify-between items-center gap-10 md:gap-28">
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center text-lg text-[#f603ad]">Md. Murad Miya</h1>
+<h1 class="font-bold text-center text-md text-slate-600">01916359343</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Md. Mahbubur Rahman</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01601007006</h1>
+    </div>
   
+    <div class="col flex flex-col h-80 ">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
 </div>
-</section>
-<!-- spend money section end  -->
-
-
-
-<!--small device donate now section start  -->
-<div class="block md:hidden bg-[#fc99df] text-center p-4 object-none object-center border-8 border-black">
-  <h1 class="text-white text-4xl font-semibold">SMALL OF YOUR DONATION CAN <br class="hidden md:block"> CHANGE SOMEONE'S FUTURE</h1>
-
-  <h1 class="font-bold text-black text-3xl mt-8 underline ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><a href="">DONATE NOW</a></h1>
-
+<h1 class="font-bold text-center text-lg text-[#f603ad]">Sraboni Saha</h1>
+<h1 class="font-bold text-center text-md text-slate-600">01903911235</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
 </div>
-<!--small device  donate now section end  -->
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Tanjuma Yeasmin</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01774383326</h1>
+    </div>
+  
+
+  </div>
 
 
+<!-- founder div start  -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-<!-- contact section start  -->
-<section class="pt-10 px-20 pb-20 mx-5 md:mx-20 xl:mx-40 my-20 shadow-lg shadow-black">
- <h1 class="py-10 font-extrabold text-4xl font-serif text-center  text-black">CONTACT US  </h1>
+    <div class="border">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
 
- <div class="flex flex-col justify-center items-center gap-2 text-lg text-[#f603ad] font-bold text-center">
-<h1><span class="text-black ">Phone No. :</span> +8801716 958239</h1>
-<h1><span class="text-black ">What's App :</span> +8801716 958239</h1>
-<h1><span class="text-black ">Mailing Address :</span> manbikothaikishoreganj@gmail.com</h1>
-<h1><span class="text-black ">Social Media : </span>https://www.facebook.com<br class="block md:hidden">/Kishoreganjinhumanity</h1>
-<h1><span class="text-black">Office :</span> <a href="" class="">Sikandar Villa , Road-Nirala , Harua Road , Kishoreganj , Dhaka</a></h1>
- </div>
+  </div>
+<!-- founder div end  -->
+
+
  
-
-
-</section>
-<!-- contact section end -->
-
-
-
-<!-- footer section start  -->
-<section class="bg-black py-14 border-t-4 border-t-[#f603ad] px-5 md:px-20 xl:px-40">
-<div class="grid grid-cols-1 md:grid-cols-2 justify-center md:justify-between items-center gap-10">
-  <div class="flex flex-col justify-start items-center md:items-start mx-auto md:mx-0">
-    <img src="https://i.ibb.co/m8qMS26/manobikotay-kg.jpg" class="h-[200px]" alt="">
-    <h1 class=" text-white font-bold text-xl">Manobikotay Kishoreganj</h1>
-    <h1 class=" text-[#f603ad] font-bold text-lg"> Kishoreganj in Humanity</h1>
-  </div>
-  <div class="flex flex-col">
-    <p class="font-normal text-white md:text-[#f603ad] text-lg justi">"Manobikotay Kishoreganj" is a non-profit organization that empowers underprivileged individuals and communities in Bangladesh through education, youth development, women’s empowerment, climate change, governance , poverty alleviation etc.</p>
-    <p class="font-normal text-slate-400 text-md">Developed by - <span class="font-bold text-lg text-white "><a href="https://fahima-akter-portfolio.netlify.app/" class="hover:text-[#f603ad] ease-in-out delay-150 duration-300" target="_blank">FAHIMA AKTER</a></span></p>
-<p class="mt-3 font-medium text-slate-400 text-center md:text-start pt-10 md:pt-0">© 2024 - <span class="text-white text-lg"> MANOBIKOTAY KISHOREGANJ</span> | All Rights Reserved</p>
-  </div>
+  <h1 class="pb-6 font-extrabold text-4xl font-serif text-center mb-10">EXECUTIVE COMMITTEE </h1>
+  <div class="grid grid-cols-2 md:grid-cols-5 justify-between items-center gap-10">
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
 </div>
-</section>
-<!-- footer section end -->
+<h1 class="font-bold text-center text-lg text-[#f603ad]">Md. Murad Miya</h1>
+<h1 class="font-bold text-center text-md text-slate-600">Founder</h1>
+<h1 class="font-bold text-center text-md text-slate-600">General Secretary</h1>
+<h1 class="font-bold text-center text-md text-slate-600">01916359343</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Md. Mahbubur Rahman</h1>
+<h1 class="font-bold text-center text-md text-slate-600">Founder</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">Chairman</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01601007006</h1>
+    </div>
+    <div class="col flex flex-col  h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Md. Mahmudur Roshid</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">Vice President</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01911259967</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Md. Rajon Miya</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">Organizing Secretary</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01608548111</h1>
+    </div>
+    <div class="col flex flex-col h-80 ">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center text-lg text-[#f603ad]">Sraboni Saha</h1>
+<h1 class="font-bold text-center text-md text-slate-600">Founder</h1>
+<h1 class="font-bold text-center text-md text-slate-600">Social Welfare Secretary</h1>
+<h1 class="font-bold text-center text-md text-slate-600">01903911235</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Tanjuma Yeasmin</h1>
+<h1 class="font-bold text-center text-md text-slate-600">Founder</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">Cashier</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01774383326</h1>
+    </div>
+    <div class="col flex flex-col h-80">
+<div>
+  <img src="https://i.ibb.co/02Y9CQs/Passport-size.png" class="rounded-full shad  border-8 border-white" alt="">
+</div>
+<h1 class="font-bold text-center  text-lg text-[#f603ad]">Md. Masud Rana</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">Active Member</h1>
+<h1 class="font-bold text-center  text-md text-slate-600">01714721125</h1>
+    </div>
 
+  </div>
+
+</section>
+<!-- commitee section end  -->
+
+
+  <!-- footer section start  -->
+  <section class="bg-black py-14 border-t-4 border-t-[#f603ad] px-3 md:px-20 xl:px-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 justify-center md:justify-between items-center gap-10">
+      <div class="flex flex-col justify-start items-center md:items-start mx-auto md:mx-0">
+        <img src="https://i.ibb.co/m8qMS26/manobikotay-kg.jpg" class="h-[200px]" alt="">
+        <h1 class=" text-white font-bold text-xl">Manobikotay Kishoreganj</h1>
+        <h1 class=" text-[#f603ad] font-bold text-lg"> Kishoreganj in Humanity</h1>
+      </div>
+      <div class="flex flex-col">
+        <p class="font-normal text-white md:text-[#f603ad] text-lg justi">"Manobikotay Kishoreganj" is a non-profit
+          organization that empowers underprivileged individuals and communities in Bangladesh through education, youth
+          development, women’s empowerment, climate change, governance , poverty alleviation etc.</p>
+        <p class="font-normal text-slate-400 text-md mt-2">Developed by - <span class="font-bold text-lg text-white "><a
+              href="https://fahima-akter-portfolio.netlify.app/"
+              class="hover:text-[#f603ad] ease-in-out delay-150 duration-300" target="_blank">FAHIMA AKTER</a></span>
+        </p>
+        <p class="mt-3 font-medium text-slate-400 text-center md:text-start pt-10 md:pt-0">© 2024 - <span
+            class="text-white text-lg"> MANOBIKOTAY KISHOREGANJ</span> | All Rights Reserved</p>
+      </div>
+    </div>
+  </section>
+  <!-- footer section end -->
+
+
+
+
+
+
+
+
+  <script src="./app.js"></script>
 
 </body>
+
 </html>
